@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ModelComing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="firstpage">首页</string>
+    <string name="weibo">微博</string>
+    <string name="rank">排行</string>
+    <string name="setting">设置</string>
+</resources>
