@@ -44,13 +44,13 @@ public class MainActivity extends FragmentActivity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}    /** 
-     * ��ʼ����� 
+     * 初始化
      */
     private void initView(){  
         
         layoutInflater = LayoutInflater.from(this);  
                        
-        //ʵ��TabHost
+        //TabHost
         mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);  
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent); 
         //mTabHost.geta

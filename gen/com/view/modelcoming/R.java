@@ -10,47 +10,113 @@ package com.view.modelcoming;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int LightSteelBlue=0x7f040001;
+        public static final int RoyalBlue=0x7f040000;
+    }
     public static final class drawable {
-        public static final int chemo_icon_01=0x7f020000;
-        public static final int foot_bt_bg01=0x7f020001;
-        public static final int foot_bt_bg02=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int paihang_icon_01=0x7f020004;
-        public static final int select=0x7f020005;
-        public static final int shezhi_icon_01=0x7f020006;
-        public static final int tab_model=0x7f020007;
-        public static final int tab_rank=0x7f020008;
-        public static final int tab_setting=0x7f020009;
-        public static final int tab_weibo=0x7f02000a;
-        public static final int weibo_icon_01=0x7f02000b;
+        public static final int background=0x7f020000;
+        public static final int chemo_icon_01=0x7f020001;
+        public static final int example_tab_item_bg=0x7f020002;
+        public static final int foot_bt_bg01=0x7f020003;
+        public static final int foot_bt_bg02=0x7f020004;
+        public static final int home_btn_bg_d=0x7f020005;
+        public static final int home_btn_bg_n=0x7f020006;
+        public static final int home_btn_bg_s=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int icon=0x7f020009;
+        public static final int icon_home=0x7f02000a;
+        public static final int icon_meassage=0x7f02000b;
+        public static final int icon_more=0x7f02000c;
+        public static final int icon_selfinfo=0x7f02000d;
+        public static final int icon_square=0x7f02000e;
+        public static final int maintab_toolbar_bg=0x7f02000f;
+        public static final int news_detail_bottom=0x7f020010;
+        public static final int news_item_bg=0x7f020011;
+        public static final int news_item_bg_cover=0x7f020012;
+        public static final int news_picture=0x7f020013;
+        public static final int paihang_icon_01=0x7f020014;
+        public static final int select=0x7f020015;
+        public static final int shezhi_icon_01=0x7f020016;
+        public static final int tab_divider=0x7f020017;
+        public static final int tab_model=0x7f020018;
+        public static final int tab_rank=0x7f020019;
+        public static final int tab_setting=0x7f02001a;
+        public static final int tab_weibo=0x7f02001b;
+        public static final int titlebar_bg_nor=0x7f02001c;
+        public static final int toolbar_refresh_icon=0x7f02001d;
+        public static final int toolbar_saysomething_icon=0x7f02001e;
+        public static final int weibo_icon_01=0x7f02001f;
+        public static final int xlistview_arrow=0x7f020020;
     }
     public static final class id {
-        public static final int imageview=0x7f070003;
-        public static final int menu_settings=0x7f070004;
-        public static final int realtabcontent=0x7f070000;
-        public static final int textview=0x7f070001;
-        public static final int textview2=0x7f070002;
+        public static final int example_center=0x7f080006;
+        public static final int example_left=0x7f080004;
+        public static final int example_right=0x7f080005;
+        public static final int example_tv=0x7f080003;
+        public static final int falls=0x7f080007;
+        public static final int imageview=0x7f080016;
+        public static final int list_item_tv=0x7f08000d;
+        public static final int menu_settings=0x7f080019;
+        public static final int news_list=0x7f080009;
+        public static final int news_pic=0x7f08000a;
+        public static final int news_time=0x7f08000c;
+        public static final int news_title=0x7f08000b;
+        public static final int pull_to_refresh_header=0x7f080011;
+        public static final int pull_to_refresh_image=0x7f080013;
+        public static final int pull_to_refresh_progress=0x7f080012;
+        public static final int pull_to_refresh_text=0x7f080014;
+        public static final int pull_to_refresh_updated_at=0x7f080015;
+        public static final int realtabcontent=0x7f080000;
+        public static final int tab_item_tv=0x7f080002;
+        public static final int tab_top=0x7f080001;
+        public static final int textview=0x7f080017;
+        public static final int textview2=0x7f080008;
+        public static final int trymyRV=0x7f08000e;
+        public static final int waterfall_container=0x7f080010;
+        public static final int waterfall_image=0x7f080018;
+        public static final int waterfall_scroll=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_models=0x7f030001;
-        public static final int fragment_rank=0x7f030002;
-        public static final int fragment_setting=0x7f030003;
-        public static final int fragment_weibo=0x7f030004;
-        public static final int model_title=0x7f030005;
-        public static final int tab_item_view=0x7f030006;
+        public static final int api_tab_host=0x7f030001;
+        public static final int api_tab_item=0x7f030002;
+        public static final int example_activity=0x7f030003;
+        public static final int example_top=0x7f030004;
+        public static final int fragment_models=0x7f030005;
+        public static final int fragment_rank=0x7f030006;
+        public static final int fragment_setting=0x7f030007;
+        public static final int fragment_weibo=0x7f030008;
+        public static final int infos_list=0x7f030009;
+        public static final int listview_item=0x7f03000a;
+        public static final int main=0x7f03000b;
+        public static final int model_title=0x7f03000c;
+        public static final int pull_to_refresh_header=0x7f03000d;
+        public static final int tab_item_view=0x7f03000e;
+        public static final int waterfallitem=0x7f03000f;
     }
     public static final class menu {
-        public static final int activity_main=0x7f060000;
+        public static final int activity_main=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int firstpage=0x7f040003;
-        public static final int hello_world=0x7f040001;
-        public static final int menu_settings=0x7f040002;
-        public static final int rank=0x7f040005;
-        public static final int setting=0x7f040006;
-        public static final int weibo=0x7f040004;
+        public static final int app_name=0x7f050000;
+        public static final int begin_trip=0x7f050008;
+        public static final int browse=0x7f050007;
+        public static final int firstpage=0x7f050003;
+        public static final int hello_world=0x7f050001;
+        public static final int menu_settings=0x7f050002;
+        public static final int pull_to_refresh_footer_label=0x7f05000d;
+        public static final int pull_to_refresh_footer_pull_label=0x7f05000e;
+        public static final int pull_to_refresh_footer_refreshing_label=0x7f05000f;
+        public static final int pull_to_refresh_pull_label=0x7f050009;
+        public static final int pull_to_refresh_refreshing_label=0x7f05000b;
+        public static final int pull_to_refresh_release_label=0x7f05000a;
+        public static final int pull_to_refresh_tap_label=0x7f05000c;
+        public static final int rank=0x7f050005;
+        public static final int refresh_down_text=0x7f050010;
+        public static final int refresh_release_text=0x7f050011;
+        public static final int setting=0x7f050006;
+        public static final int weibo=0x7f050004;
     }
     public static final class style {
         /** 
@@ -74,10 +140,19 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f060009;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f06000a;
+        public static final int TextView=0x7f060002;
+        public static final int TextView_Middle=0x7f060006;
+        public static final int TextView_Middle_Black=0x7f060008;
+        public static final int TextView_Middle_White=0x7f060007;
+        public static final int TextView_Small=0x7f060003;
+        public static final int TextView_Small_Black=0x7f060005;
+        public static final int TextView_Small_White=0x7f060004;
+        public static final int Theme=0x7f060000;
+        public static final int Theme_Tabhost=0x7f060001;
     }
 }

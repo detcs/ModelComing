@@ -3,32 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >  
-    <RelativeLayout
+    <ListView
         android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:orientation="horizontal"
-    	
-       >
-    <TextView 
-        android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	 android:text="车模"
-    	 android:layout_centerInParent="true"
-        />  
-        <ImageView 
-		    android:layout_height="wrap_content"
-		    android:layout_width="wrap_content" 
-		    android:layout_alignParentRight="true"
-		    android:src="@drawable/select"
-	     />
-   </RelativeLayout>
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="fitCenter"
-        android:text="fra1"
-         >  
-    </TextView>  
-       
+    	android:layout_height="fill_parent"
+    	android:id="@+id/falls"
+         ></ListView>
 </LinearLayout>
