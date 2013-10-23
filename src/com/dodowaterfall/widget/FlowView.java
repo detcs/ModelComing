@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class FlowView extends ImageView implements View.OnClickListener, View.OnLongClickListener {
+public class FlowView extends ImageView implements View.OnClickListener {
 
 	private Context context;
 	public Bitmap bitmap;
@@ -41,11 +41,11 @@ public class FlowView extends ImageView implements View.OnClickListener, View.On
 	private void Init() {
 
 		setOnClickListener(this);
-		setOnLongClickListener(this);
+		//setOnLongClickListener(this);
 		setAdjustViewBounds(true);
 
 	}
-
+/*
 	@Override
 	public boolean onLongClick(View v) {
 		Log.d("FlowView", "LongClick");
@@ -58,7 +58,7 @@ public class FlowView extends ImageView implements View.OnClickListener, View.On
 		Log.d("FlowView", "Click");
 		Toast.makeText(context, "单击：" + getId(), Toast.LENGTH_SHORT).show();
 	}
-
+*/
 
 	/**
 	 * 回收内存
@@ -110,6 +110,12 @@ public class FlowView extends ImageView implements View.OnClickListener, View.On
 
 	public void set_url(String _url) {
 		this._url = _url;
+	}
+
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

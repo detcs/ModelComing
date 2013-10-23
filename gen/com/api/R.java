@@ -22,18 +22,18 @@ public final class R {
 		public static final int icon_more = 0x7f02000c;
 		public static final int icon_selfinfo = 0x7f02000d;
 		public static final int icon_square = 0x7f02000e;
-		public static final int maintab_toolbar_bg = 0x7f02000f;
-		public static final int tab_divider = 0x7f020017;
-		public static final int titlebar_bg_nor = 0x7f02001c;
-		public static final int toolbar_refresh_icon = 0x7f02001d;
-		public static final int toolbar_saysomething_icon = 0x7f02001e;
+		public static final int maintab_toolbar_bg = 0x7f020010;
+		public static final int tab_divider = 0x7f020018;
+		public static final int titlebar_bg_nor = 0x7f02001d;
+		public static final int toolbar_refresh_icon = 0x7f02001e;
+		public static final int toolbar_saysomething_icon = 0x7f02001f;
 	}
 	public static final class id {
 		public static final int example_center = 0x7f080006;
 		public static final int example_left = 0x7f080004;
 		public static final int example_right = 0x7f080005;
 		public static final int example_tv = 0x7f080003;
-		public static final int list_item_tv = 0x7f08000d;
+		public static final int list_item_tv = 0x7f08000e;
 		public static final int tab_item_tv = 0x7f080002;
 		public static final int tab_top = 0x7f080001;
 	}
@@ -42,7 +42,7 @@ public final class R {
 		public static final int api_tab_item = 0x7f030002;
 		public static final int example_activity = 0x7f030003;
 		public static final int example_top = 0x7f030004;
-		public static final int listview_item = 0x7f03000a;
+		public static final int listview_item = 0x7f03000b;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f050000;

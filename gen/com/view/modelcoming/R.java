@@ -30,52 +30,71 @@ public final class R {
         public static final int icon_more=0x7f02000c;
         public static final int icon_selfinfo=0x7f02000d;
         public static final int icon_square=0x7f02000e;
-        public static final int maintab_toolbar_bg=0x7f02000f;
-        public static final int news_detail_bottom=0x7f020010;
-        public static final int news_item_bg=0x7f020011;
-        public static final int news_item_bg_cover=0x7f020012;
-        public static final int news_picture=0x7f020013;
-        public static final int paihang_icon_01=0x7f020014;
-        public static final int select=0x7f020015;
-        public static final int shezhi_icon_01=0x7f020016;
-        public static final int tab_divider=0x7f020017;
-        public static final int tab_model=0x7f020018;
-        public static final int tab_rank=0x7f020019;
-        public static final int tab_setting=0x7f02001a;
-        public static final int tab_weibo=0x7f02001b;
-        public static final int titlebar_bg_nor=0x7f02001c;
-        public static final int toolbar_refresh_icon=0x7f02001d;
-        public static final int toolbar_saysomething_icon=0x7f02001e;
-        public static final int weibo_icon_01=0x7f02001f;
-        public static final int xlistview_arrow=0x7f020020;
+        public static final int loading=0x7f02000f;
+        public static final int maintab_toolbar_bg=0x7f020010;
+        public static final int news_detail_bottom=0x7f020011;
+        public static final int news_item_bg=0x7f020012;
+        public static final int news_item_bg_cover=0x7f020013;
+        public static final int news_picture=0x7f020014;
+        public static final int paihang_icon_01=0x7f020015;
+        public static final int select=0x7f020016;
+        public static final int shezhi_icon_01=0x7f020017;
+        public static final int tab_divider=0x7f020018;
+        public static final int tab_model=0x7f020019;
+        public static final int tab_rank=0x7f02001a;
+        public static final int tab_setting=0x7f02001b;
+        public static final int tab_weibo=0x7f02001c;
+        public static final int titlebar_bg_nor=0x7f02001d;
+        public static final int toolbar_refresh_icon=0x7f02001e;
+        public static final int toolbar_saysomething_icon=0x7f02001f;
+        public static final int weibo_icon_01=0x7f020020;
+        public static final int xihuan_bt=0x7f020021;
+        public static final int xlistview_arrow=0x7f020022;
+        public static final int zhichi_bt=0x7f020023;
     }
     public static final class id {
+        public static final int bigimg=0x7f080014;
+        public static final int btnLogin=0x7f080027;
+        public static final int btnShare=0x7f080024;
+        public static final int button=0x7f080009;
         public static final int example_center=0x7f080006;
         public static final int example_left=0x7f080004;
         public static final int example_right=0x7f080005;
         public static final int example_tv=0x7f080003;
-        public static final int falls=0x7f080007;
-        public static final int imageview=0x7f080016;
-        public static final int list_item_tv=0x7f08000d;
-        public static final int menu_settings=0x7f080019;
-        public static final int news_list=0x7f080009;
-        public static final int news_pic=0x7f08000a;
-        public static final int news_time=0x7f08000c;
-        public static final int news_title=0x7f08000b;
-        public static final int pull_to_refresh_header=0x7f080011;
-        public static final int pull_to_refresh_image=0x7f080013;
-        public static final int pull_to_refresh_progress=0x7f080012;
-        public static final int pull_to_refresh_text=0x7f080014;
-        public static final int pull_to_refresh_updated_at=0x7f080015;
+        public static final int falls=0x7f080008;
+        public static final int gallery=0x7f080015;
+        public static final int gridview=0x7f08001a;
+        public static final int imageview=0x7f080021;
+        public static final int leftlist=0x7f080012;
+        public static final int likebutton=0x7f080017;
+        public static final int list_item_tv=0x7f08000e;
+        public static final int menu_settings=0x7f080029;
+        public static final int modelimg=0x7f080016;
+        public static final int modelinfo=0x7f080019;
+        public static final int modellinearlayout=0x7f080007;
+        public static final int modeltabgroup=0x7f08001b;
+        public static final int news_list=0x7f08000b;
+        public static final int news_pic=0x7f08000c;
+        public static final int news_title=0x7f08000d;
+        public static final int pull_to_refresh_header=0x7f08001c;
+        public static final int pull_to_refresh_image=0x7f08001e;
+        public static final int pull_to_refresh_progress=0x7f08001d;
+        public static final int pull_to_refresh_text=0x7f08001f;
+        public static final int pull_to_refresh_updated_at=0x7f080020;
         public static final int realtabcontent=0x7f080000;
+        public static final int rightlist=0x7f080013;
+        public static final int root=0x7f080023;
+        public static final int surpportbutton=0x7f080018;
         public static final int tab_item_tv=0x7f080002;
         public static final int tab_top=0x7f080001;
-        public static final int textview=0x7f080017;
-        public static final int textview2=0x7f080008;
-        public static final int trymyRV=0x7f08000e;
-        public static final int waterfall_container=0x7f080010;
-        public static final int waterfall_image=0x7f080018;
-        public static final int waterfall_scroll=0x7f08000f;
+        public static final int textview=0x7f080022;
+        public static final int textview2=0x7f08000a;
+        public static final int trymyRV=0x7f08000f;
+        public static final int tvResult=0x7f080025;
+        public static final int tvToken=0x7f080028;
+        public static final int waterfall_container=0x7f080011;
+        public static final int waterfall_image=0x7f080026;
+        public static final int waterfall_scroll=0x7f080010;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -83,17 +102,25 @@ public final class R {
         public static final int api_tab_item=0x7f030002;
         public static final int example_activity=0x7f030003;
         public static final int example_top=0x7f030004;
-        public static final int fragment_models=0x7f030005;
-        public static final int fragment_rank=0x7f030006;
-        public static final int fragment_setting=0x7f030007;
-        public static final int fragment_weibo=0x7f030008;
-        public static final int infos_list=0x7f030009;
-        public static final int listview_item=0x7f03000a;
-        public static final int main=0x7f03000b;
-        public static final int model_title=0x7f03000c;
-        public static final int pull_to_refresh_header=0x7f03000d;
-        public static final int tab_item_view=0x7f03000e;
-        public static final int waterfallitem=0x7f03000f;
+        public static final int fall_fragment=0x7f030005;
+        public static final int fragment_models=0x7f030006;
+        public static final int fragment_rank=0x7f030007;
+        public static final int fragment_setting=0x7f030008;
+        public static final int fragment_weibo=0x7f030009;
+        public static final int infos_list=0x7f03000a;
+        public static final int listview_item=0x7f03000b;
+        public static final int main=0x7f03000c;
+        public static final int model_fall=0x7f03000d;
+        public static final int model_gallery=0x7f03000e;
+        public static final int model_title=0x7f03000f;
+        public static final int modelpersoninfo=0x7f030010;
+        public static final int modeltabgroup=0x7f030011;
+        public static final int pull_to_refresh_header=0x7f030012;
+        public static final int tab_item_view=0x7f030013;
+        public static final int test=0x7f030014;
+        public static final int timeline=0x7f030015;
+        public static final int waterfallitem=0x7f030016;
+        public static final int weibomain=0x7f030017;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
@@ -155,4 +182,25 @@ public final class R {
         public static final int Theme=0x7f060000;
         public static final int Theme_Tabhost=0x7f060001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a Gallery.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Gallery_android_galleryItemBackground android:galleryItemBackground}</code></td><td></td></tr>
+           </table>
+           @see #Gallery_android_galleryItemBackground
+         */
+        public static final int[] Gallery = {
+            0x0101004c
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#galleryItemBackground}
+          attribute's value can be found in the {@link #Gallery} array.
+          @attr name android:galleryItemBackground
+        */
+        public static final int Gallery_android_galleryItemBackground = 0;
+    };
 }

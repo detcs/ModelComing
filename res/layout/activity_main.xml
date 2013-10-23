@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1" />  
-     
+      
     <android.support.v4.app.FragmentTabHost
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
@@ -18,9 +18,38 @@
        
         <FrameLayout
             android:id="@android:id/tabcontent"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="0" />              
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />      
+                  
     </android.support.v4.app.FragmentTabHost>  
-       
+    <!-- 
+      <fragment 
+                    android:name="com.view.modelcoming.FragmentPageModel"
+                    android:id="@+id/frag_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.view.modelcoming.FragmentPageWeibo"
+                    android:id="@+id/frag_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.view.modelcoming.FragmentPageRank"
+                    android:id="@+id/frag_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.view.modelcoming.FragmentPageSetting"
+                    android:id="@+id/frag_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        
+              <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />     
+                 -->
 </LinearLayout>

@@ -22,7 +22,7 @@
         android:layout_below="@+id/news_pic"
         android:singleLine="false"
         android:textColor="#656565" />
-
+<!-- 
     <TextView
         android:id="@+id/news_time"
         android:layout_width="wrap_content"
@@ -31,5 +31,5 @@
         android:layout_gravity="right|bottom"
         android:gravity="right"
         android:textColor="#9f9f9f" />
-
+ -->
 </LinearLayout>

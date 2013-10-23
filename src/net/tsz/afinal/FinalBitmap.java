@@ -16,6 +16,7 @@
 package net.tsz.afinal;
 
 import java.io.File;
+import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
@@ -31,11 +32,13 @@ import net.tsz.afinal.bitmap.download.SimpleHttpDownloader;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
+import com.data.modelcoming.ModelBaseInfo;
 import com.dodola.model.DuitangInfo;
 import com.dodowaterfall.widget.FlowView;
 
@@ -52,7 +55,7 @@ public class FinalBitmap {
 	private static ExecutorService bitmapLoadAndDisplayExecutor;
 
 	public interface ImageLoadCompleteListener {
-		void onLoadComplete(Bitmap bitmap, DuitangInfo _info);
+		void onLoadComplete(Bitmap bitmap, ModelBaseInfo _info);
 	}
 
 	private ImageLoadCompleteListener completeListener;
@@ -270,8 +273,8 @@ public class FinalBitmap {
 		reloadDisplay(uri, null, view);
 	}
 
-	public void display(DuitangInfo info) {
-		doDisplay(info.getIsrc(), null, info);
+	public void display(ModelBaseInfo info) {
+		doDisplay(info.getAlbum_pic(), null, info);
 	}
 
 	private void reloadDisplay(String uri, BitmapDisplayConfig displayConfig, FlowView view) {
@@ -299,8 +302,9 @@ public class FinalBitmap {
 		}
 	}
 
-	private void doDisplay(String uri, BitmapDisplayConfig displayConfig, DuitangInfo info) {
+	private void doDisplay(String uri, BitmapDisplayConfig displayConfig, ModelBaseInfo info) {
 		Log.d("FinalBitmap", "currentUrl:" + uri + ",is reload:" + _isReload);
+		System.out.println("uri-------------"+uri);
 		if (TextUtils.isEmpty(uri)) {
 			return;
 		}
@@ -312,19 +316,31 @@ public class FinalBitmap {
 
 		if (mImageCache != null) {
 			bitmap = mImageCache.getBitmapFromMemCache(uri);
+			 //bitmap=resizePic(bitmap);
 		}
 
 		if (bitmap != null) {
 
+			bitmap=resizePic(bitmap);
 			getCompleteListener().onLoadComplete(bitmap, info);
 
 		} else {
-
+			
 			final BitmapLoadTask task = new BitmapLoadTask(displayConfig,info);
 			task.executeOnExecutor(bitmapLoadAndDisplayExecutor, uri);
 		}
 	}
-
+	private static Bitmap resizePic(Bitmap bitmap) {
+		Random random = new Random();
+		float s = random.nextInt(4) + 7;
+		  Matrix matrix = new Matrix();
+		  float rate=s/10;
+		  System.out.println("height "+bitmap.getHeight()+" random "+rate);
+		  matrix.postScale(rate,rate); //长和宽放大缩小的比例
+		  Bitmap resizeBmp = Bitmap.createBitmap(bitmap,0,0,bitmap.getWidth(),bitmap.getHeight(),matrix,true);
+		  System.out.println("new height "+resizeBmp.getHeight());
+		  return resizeBmp;
+		 }
 	private void initDiskCacheInternal() {
 		if (mImageCache != null) {
 			mImageCache.initDiskCache();
@@ -498,9 +514,9 @@ public class FinalBitmap {
 	private class BitmapLoadTask extends AsyncTask<Object, Void, Bitmap> {
 		private Object data;
 		private final BitmapDisplayConfig displayConfig;
-		private DuitangInfo info;
-
-		public BitmapLoadTask(BitmapDisplayConfig config, DuitangInfo _info) {
+		//private DuitangInfo info;
+		private ModelBaseInfo info;
+		public BitmapLoadTask(BitmapDisplayConfig config, ModelBaseInfo _info) {
 			displayConfig = config;
 			info = _info;
 		}

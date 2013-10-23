@@ -2,8 +2,10 @@ package com.view.modelcoming;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -21,7 +23,7 @@ public class MainActivity extends FragmentActivity {
     private LayoutInflater layoutInflater;  
                
     //各个fragment类 
-    private Class fragmentArray[] = {FragmentPageModel.class,FragmentPageWeibo.class,FragmentPageRank.class,FragmentPageSetting.class};
+    private Class fragmentArray[] = {FirstFragment.class,FragmentPageWeibo.class,FragmentPageRank.class,FragmentPageSetting.class};
     
     //各个tab图片
     private int mImageViewArray[] = {R.drawable.chemo_icon_01,R.drawable.weibo_icon_01,R.drawable.paihang_icon_01,R.drawable.shezhi_icon_01};  
@@ -36,6 +38,7 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		
 		initView();  
+		
 	}
 
 	@Override
@@ -59,9 +62,9 @@ public class MainActivity extends FragmentActivity {
         int count = fragmentArray.length;     
                        
         for(int i = 0; i < count; i++){    
-            //Ϊÿһ��Tab
+            //Tab
             TabSpec tabSpec = mTabHost.newTabSpec(mTextviewArray[i]).setIndicator(getTabItemView(i));  
-            //��Tab
+            //Tab页添加名字为fragmentArray[i]的fragment
             mTabHost.addTab(tabSpec, fragmentArray[i], null);  
             //Tab背景图
             mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.foot_bt_bg02);  
