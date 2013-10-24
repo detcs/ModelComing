@@ -4,10 +4,15 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.LoadedFrom;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.nostra13.universalimageloader.core.display.BitmapDisplayer;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.view.modelcoming.R;
 
 import android.app.Application;
+import android.graphics.Bitmap;
+import android.widget.ImageView;
 
 public class MyApplication extends Application {
 
@@ -22,6 +27,7 @@ public class MyApplication extends Application {
 				.showImageOnFail(R.drawable.ic_launcher)
 			    .cacheInMemory(true)
 			    .cacheOnDisc(true)
+			    //.displayer(new RoundedBitmapDisplayer(20))
 				.build();
 		
 		ImageLoaderConfiguration config=new ImageLoaderConfiguration.Builder(getApplicationContext())

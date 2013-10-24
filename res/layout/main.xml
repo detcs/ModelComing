@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sqq.ScrollViewPull.widget.TryRefreshableView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/trymyRV"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    	android:id="@+id/top"
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:background="@drawable/foot_bt_bg02" >
+   		<TextView
+   		    android:text="车模"
+   		    android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:layout_centerHorizontal="true"
+   		    />
+   		 <ImageView
+   		     android:src="@drawable/saixuanqi"
+   		     android:layout_width="wrap_content"
+   		 	 android:layout_height="wrap_content"
+   		 	 android:layout_alignParentRight="true"
+   		 	 android:paddingTop="3dp"
+   		 	 android:paddingRight="3dp"
+   		 	 android:paddingBottom="3dp"
+   		 	 
+   		     />
+    </RelativeLayout>
+<sqq.ScrollViewPull.widget.TryRefreshableView 
+    android:id="@+id/trymyRV"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:focusable="true"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:layout_below="@id/top" >
 
     <sqq.ScrollViewPull.widget.TryPullToRefreshScrollView
         android:id="@+id/waterfall_scroll"
@@ -16,8 +45,11 @@
             android:id="@+id/waterfall_container"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="@drawable/background" >
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            >
         </LinearLayout>
     </sqq.ScrollViewPull.widget.TryPullToRefreshScrollView>
 
 </sqq.ScrollViewPull.widget.TryRefreshableView>
+</RelativeLayout>

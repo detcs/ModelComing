@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
          >
     <LinearLayout 
     	android:layout_width="match_parent"
@@ -28,24 +29,26 @@
     				android:layout_height="wrap_content"
     				android:orientation="horizontal" 
     				android:layout_gravity="center_horizontal"
+    				android:paddingBottom="3dp"
     			>
     			<ImageView 
     			    android:id="@+id/likebutton" 
     			    android:src="@drawable/xihuan_bt"
     		    	android:layout_width="wrap_content"
-    				android:layout_height="wrap_content"/>
+    				android:layout_height="wrap_content"
+    				android:layout_weight="1"/>
     			<ImageView 
     			    android:id="@+id/surpportbutton" 
     			    android:src="@drawable/zhichi_bt"
     		    	android:layout_width="wrap_content"
-    				android:layout_height="wrap_content"/>
+    				android:layout_height="wrap_content"
+    				android:layout_weight="1"/>
     			</LinearLayout>	
     	</LinearLayout>
     	<TextView
     	    android:id="@+id/modelinfo" 
     	    android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
-    		android:text="info"
     		android:layout_gravity="center"
     		android:paddingLeft="10dp"
     	    />

@@ -24,27 +24,27 @@ public class MainTabActivity extends TabHostActivity{
     @Override
     protected void prepare() {
         TabItem home = new TabItem(
-                "首页",                                    // title
-                R.drawable.icon_home,                    // icon
-                R.drawable.example_tab_item_bg,            // background
+                "车模",                                    // title
+                R.drawable.chemo_icon_02,                    // icon
+                R.drawable.foot_bt_bg01,            // background
                 new Intent(this, FallActivity.class));    // intent
         
         TabItem info = new TabItem(
-                "资料",
-                R.drawable.icon_selfinfo,
-                R.drawable.example_tab_item_bg,
+                "微博",
+                R.drawable.weibo_icon_01,
+                R.drawable.foot_bt_bg02,
                 new Intent(this, WeiboActivity.class));
         
         TabItem msg = new TabItem(
-                "信息",
-                R.drawable.icon_meassage,
-                R.drawable.example_tab_item_bg,
+                "排行",
+                R.drawable.paihang_icon_01,
+                R.drawable.foot_bt_bg02,
                 new Intent(this, RankActivity.class));
         
         TabItem square = new TabItem(
-                "广场",
-                R.drawable.icon_square,
-                R.drawable.example_tab_item_bg,
+                "设置",
+                R.drawable.shezhi_icon_01,
+                R.drawable.foot_bt_bg02,
                 new Intent(this, SettingActivity.class));
         
         
@@ -76,7 +76,74 @@ public class MainTabActivity extends TabHostActivity{
         textView.setCompoundDrawablesWithIntrinsicBounds(0, ((TabItem) mItems.get(position)).getIcon(), 0, 0);
         
 	}
-
+	@Override
+	protected void setSelectedTabItemTextView(TextView textView, int position) {
+		// TODO Auto-generated method stub
+		//textView.setPadding(3, 3, 3, 3);
+		System.out.println(" select "+position);
+		//View v=()
+	//	textView.setText(( mItems.get(position)).getTitle());
+		
+//		textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+//    	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.chemo_icon_01, 0, 0);
+//    	
+//    	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+//    	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.weibo_icon_01, 0, 0);
+//	
+//    	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+//    	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.paihang_icon_01, 0, 0);
+//	
+//    	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+//    	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.shezhi_icon_01, 0, 0);
+//		
+		if(position==0)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg01);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.chemo_icon_02, 0, 0);
+		}
+		else if(position==1)
+		{
+			System.out.println("position==1");
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg01);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.weibo_icon_02, 0, 0);
+		}
+		else if(position==2)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg01);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.paihang_icon_02, 0, 0);
+		}
+		else if(position==3)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg01);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.shezhi_icon_02, 0, 0);
+		}
+        
+	}
+	@Override
+	protected void setDeselectedTabItemTextView(TextView textView, int position) {
+		// TODO Auto-generated method stub
+		if(position==0)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.chemo_icon_01, 0, 0);
+		}
+		else if(position==1)
+		{
+			//System.out.println("position==1");
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.weibo_icon_01, 0, 0);
+		}
+		else if(position==2)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.paihang_icon_01, 0, 0);
+		}
+		else if(position==3)
+		{
+        	textView.setBackgroundResource(R.drawable.foot_bt_bg02);
+        	textView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.shezhi_icon_01, 0, 0);
+		}
+	}
 	@Override
 	protected String getTabItemId(int position) {
 		// TODO Auto-generated method stub
@@ -86,6 +153,34 @@ public class MainTabActivity extends TabHostActivity{
 	/**点击tab时触发的事件*/
     @Override
     protected Intent getTabItemIntent(int position) {
+    //	System.out.println("choose "+position);
+    	
+    	
+    	
+//    		mItems.get(0).setIcon(R.drawable.chemo_icon_01);
+//    		mItems.get(0).setBg(R.drawable.foot_bt_bg02);
+//    		mItems.get(1).setIcon(R.drawable.weibo_icon_01);
+//    		mItems.get(1).setBg(R.drawable.foot_bt_bg02);
+//    		mItems.get(2).setIcon(R.drawable.paihang_icon_01);
+//    		mItems.get(2).setBg(R.drawable.foot_bt_bg02);
+//    		mItems.get(3).setIcon(R.drawable.shezhi_icon_01);
+//    		mItems.get(3).setBg(R.drawable.foot_bt_bg02);
+//    		
+//    		mItems.get(position).setBg(R.drawable.foot_bt_bg01);
+//    		//选中车模
+//        	if(position==0)
+//        		mItems.get(position).setIcon(R.drawable.chemo_icon_02);	
+//    	//选中weibo
+//    	if(position==1)
+//    		mItems.get(position).setIcon(R.drawable.weibo_icon_02);   	
+//    	//选中排行
+//    	if(position==2)
+//    		mItems.get(position).setIcon(R.drawable.paihang_icon_02);    	  		
+//    	//选中设置
+//    	if(position==3)
+//    		mItems.get(position).setIcon(R.drawable.shezhi_icon_02);
+//    		
+//    		
         return ( mItems.get(position)).getIntent();
     }
     @Override
@@ -96,7 +191,14 @@ public class MainTabActivity extends TabHostActivity{
     /**自定义头部文件*/
     @Override
     protected View getTop() {
-        return mLayoutInflater.inflate(R.layout.example_top, null);
+        //return mLayoutInflater.inflate(R.layout.example_top, null);
+    	return null;
     }
+
+	
+
+	
+
+
 	
 }

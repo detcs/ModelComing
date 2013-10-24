@@ -12,27 +12,28 @@ public final class R {
 		public static final int RoyalBlue = 0x7f040000;
 	}
 	public static final class drawable {
-		public static final int example_tab_item_bg = 0x7f020002;
-		public static final int home_btn_bg_d = 0x7f020005;
-		public static final int home_btn_bg_n = 0x7f020006;
-		public static final int home_btn_bg_s = 0x7f020007;
-		public static final int ic_launcher = 0x7f020008;
-		public static final int icon_home = 0x7f02000a;
-		public static final int icon_meassage = 0x7f02000b;
-		public static final int icon_more = 0x7f02000c;
-		public static final int icon_selfinfo = 0x7f02000d;
-		public static final int icon_square = 0x7f02000e;
-		public static final int maintab_toolbar_bg = 0x7f020010;
-		public static final int tab_divider = 0x7f020018;
-		public static final int titlebar_bg_nor = 0x7f02001d;
-		public static final int toolbar_refresh_icon = 0x7f02001e;
-		public static final int toolbar_saysomething_icon = 0x7f02001f;
+		public static final int example_tab_item_bg = 0x7f020003;
+		public static final int home_btn_bg_d = 0x7f020008;
+		public static final int home_btn_bg_n = 0x7f020009;
+		public static final int home_btn_bg_s = 0x7f02000a;
+		public static final int ic_launcher = 0x7f02000b;
+		public static final int icon_home = 0x7f02000d;
+		public static final int icon_meassage = 0x7f02000e;
+		public static final int icon_more = 0x7f02000f;
+		public static final int icon_selfinfo = 0x7f020010;
+		public static final int icon_square = 0x7f020011;
+		public static final int maintab_toolbar_bg = 0x7f020013;
+		public static final int saixuanqi = 0x7f02001a;
+		public static final int tab_divider = 0x7f02001e;
+		public static final int titlebar_bg_nor = 0x7f020023;
+		public static final int toolbar_refresh_icon = 0x7f020024;
+		public static final int toolbar_saysomething_icon = 0x7f020025;
 	}
 	public static final class id {
 		public static final int example_center = 0x7f080006;
 		public static final int example_left = 0x7f080004;
-		public static final int example_right = 0x7f080005;
 		public static final int example_tv = 0x7f080003;
+		public static final int filterbutton = 0x7f080005;
 		public static final int list_item_tv = 0x7f08000e;
 		public static final int tab_item_tv = 0x7f080002;
 		public static final int tab_top = 0x7f080001;

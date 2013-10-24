@@ -30,6 +30,7 @@ public class GetModelBaseInfo {
 	{
 		List<ModelBaseInfo> infos=null;
 		String result=getMethod();
+		System.out.println("result "+result);
 		try {
 			if(result!=null)
 			infos=parseJson(result);

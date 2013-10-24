@@ -169,11 +169,12 @@ public class ModelPersonalActivity extends Activity{
             			 					+"三围 ："+result.getBwh()+"\n"
             			 					+"职业 ："+result.getJob()+"\n"
             			 					+"所在城市 ："+result.getCity());
-            	 int width=(int) (screenWidth*0.7);
+            	 int width=(int) (screenWidth*0.6);
+            	 int height=(int) (screenWidth*0.9);
             	 //int height=width
-            	 modelBigImg.setLayoutParams(new LinearLayout.LayoutParams(width,screenWidth));
+            	 modelBigImg.setLayoutParams(new LinearLayout.LayoutParams(width,height));
             	 modelBigImg.setScaleType(ScaleType.FIT_XY);
-     			modelBigImg.setPadding(5, 5, 5, 5);
+     			modelBigImg.setPadding(8, 8, 8, 8);
             	MyApplication.imageLoader.displayImage(bigImgUrl, modelBigImg);
             	gridview.setAdapter(new GridViewAdapter(ModelPersonalActivity.this));
              }else {  

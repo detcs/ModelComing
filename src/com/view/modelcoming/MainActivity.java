@@ -67,7 +67,7 @@ public class MainActivity extends FragmentActivity {
             //Tab页添加名字为fragmentArray[i]的fragment
             mTabHost.addTab(tabSpec, fragmentArray[i], null);  
             //Tab背景图
-            mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.foot_bt_bg02);  
+            mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.foot_bt_bg020);  
         }  
     }  
                        

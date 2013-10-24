@@ -77,7 +77,7 @@ public class FallActivity extends Activity implements ImageLoadCompleteListener 
 	private List<LinkedList<View>> all_screen_view; // 封装每屏View集合的集合
 	private View firstView;
 	private static List<ModelBaseInfo> modelBaseInfos=null;
-
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
