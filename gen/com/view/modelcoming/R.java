@@ -121,14 +121,15 @@ public final class R {
         public static final int model_fall=0x7f03000d;
         public static final int model_gallery=0x7f03000e;
         public static final int model_title=0x7f03000f;
-        public static final int modelpersoninfo=0x7f030010;
-        public static final int modeltabgroup=0x7f030011;
-        public static final int pull_to_refresh_header=0x7f030012;
-        public static final int tab_item_view=0x7f030013;
-        public static final int test=0x7f030014;
-        public static final int timeline=0x7f030015;
-        public static final int waterfallitem=0x7f030016;
-        public static final int weibomain=0x7f030017;
+        public static final int modelfilter_dialog=0x7f030010;
+        public static final int modelpersoninfo=0x7f030011;
+        public static final int modeltabgroup=0x7f030012;
+        public static final int pull_to_refresh_header=0x7f030013;
+        public static final int tab_item_view=0x7f030014;
+        public static final int test=0x7f030015;
+        public static final int timeline=0x7f030016;
+        public static final int waterfallitem=0x7f030017;
+        public static final int weibomain=0x7f030018;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
