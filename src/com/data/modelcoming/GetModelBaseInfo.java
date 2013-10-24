@@ -24,13 +24,13 @@ public class GetModelBaseInfo {
 		// TODO Auto-generated constructor stub
 		httpClient=new DefaultHttpClient();
 		//System.out.println("before thrade");
-		
+		 
 	}
 	public List<ModelBaseInfo> requestModelBaseInfo()
 	{
 		List<ModelBaseInfo> infos=null;
 		String result=getMethod();
-		System.out.println("result "+result);
+		//System.out.println("result "+result);
 		try {
 			if(result!=null)
 			infos=parseJson(result);
